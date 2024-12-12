@@ -934,21 +934,29 @@ button:focus,
 
 /* Custom Kaggle Button Style */
 .kaggle-btn {
+  display: flex;          /* Add this */
+  align-items: center;    /* Add this */
   color: #ffffff;
-  background-color: #1fbeff; /* Light Sea Green */
+  background-color: #1fbeff;
   border-color: #1fbeff;
   font-size: 16px;
   border-radius: 5px;
   font-weight: 600;
   text-transform: uppercase;
   transition: background-color 0.3s ease, color 0.3s ease;
-  margin-left: 25px;
-  padding: 10px 20px 10px 20px;
+  margin-left: 15px;
+  margin-top: 6px;
+  height: 100%;          /* Add this */
+}
+
+.kaggle-btn a {
+  padding: 10px 20px !important;  /* Add !important to override other styles */
+  color: #ffffff !important;      /* Add this to ensure text remains white */
 }
 
 .kaggle-btn:hover,
 .kaggle-btn:focus {
-  background-color: #0b96cd; /* Sea Green */
+  background-color: #0b96cd;
   color: #ffffff;
   border-color: #0b96cd;
 }
