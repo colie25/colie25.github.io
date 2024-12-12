@@ -365,7 +365,7 @@ button:focus,
 
 .jumbotron {
   position: relative; /* Ensure the pseudo-element is positioned correctly */
-  background: url("../img/bg/lucca.webp");
+  background: url("../img/bg/wuhan.webp");
   background-size: cover;
   padding: 0;
   margin: 0;
@@ -385,7 +385,7 @@ button:focus,
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.55); /* Adjust the color and opacity */
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust the color and opacity */
   z-index: 1; /* Ensure the overlay is above the background image */
 }
 
