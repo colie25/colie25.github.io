@@ -54,11 +54,14 @@
                             <li class="hidden"><a href="#page-top"></a></li>
                             <li><a class="page-scroll" href="#section-overview">Overview</a></li>
                             <li><a class="page-scroll" href="#section-tasks">Tasks</a></li>
-                            <li><a class="page-scroll" href="#section-evaluation">Evaluation</a></li>
                             <li><a class="page-scroll" href="#section-keydates">Timeline</a></li>
                             <li><a class="page-scroll" href="#section-organization">Organization</a></li>
+                            <li href="https://www.kaggle.com/competitions/icdar-2025-ColiE_Task1" target="_blank"
+                                    class="kaggle-btn">Kaggle</li>
                         </ul>
+                        
                     </div>
+                    
                 </div>
             </nav>
 
@@ -68,11 +71,10 @@
         <div class="jumbotron text-center">
             <div class="content">
                 <div class="event-date">September 17-21, 2025 - Wuhan, Hubei, China</div>
-                <h1>CoLiE 2025</h1>
-                <p class="lead">Competition on Automatic Classification of Literary Epochs
-                    <br />
+                <h1>CoLiE</h1>
+                <p class="lead">Competition on Automatic Classification of Literary Epochs</p>
+                <p style="font-size: 1.2em; font-weight: 300;">
                     held in conjunction with the 19th International Conference on Document Analysis and Recognition
-
                 </p>
                 <a href="https://www.kaggle.com/competitions/icdar-2025-ColiE_Task1" target="_blank"
                     class="page-scroll btn btn-default btn-lg">Register Now</a>
@@ -97,18 +99,14 @@
                         dating literary texts, that is, automatically predicting the time in which the text was written.
                     </p>
                     <p>
-                        This competition presents two main tasks: <strong>TASK 1: Literary Epochs
-                            Classification</strong>
-                        and <strong>TASK 2: ChronoText Classification</strong>. Each participant can participate in both
-                        or only one of them. Here, you are competing in TASK 1. To register and compete in
-                        <a href="https://www.kaggle.com/competitions/icdar-2025-ColiE_Task2/">TASK 2, follow this
-                            link</a>.
+                        This competition presents two main tasks: 
+                        <strong><a href="https://www.kaggle.com/competitions/icdar-2025-ColiE_Task1">Task 1, Literary Epochs Classification</a></strong>
+                        and <strong><a href="https://www.kaggle.com/competitions/icdar-2025-ColiE_Task2">Task 2, ChronoText Classification</a></strong>. Each participant can participate in both
+                        or only one of them.
                     </p>
                     <p>
-                        <mark><b style="font-size: 1.2em;">To join the competition, click the "Join Competition" button
-                                at
-                                the top right corner. In addition, please fill in the
-                                <a href="https://forms.gle/TDJ9PHZYDo3mdQUJ9">registration form</a></b></mark>
+                        To join the competition, click the "Join Competition" in top right corner of the Kaggle page for the task. In addition, please fill in the
+                        <a href="https://forms.gle/TDJ9PHZYDo3mdQUJ9">registration form</a></b></mark>.
                     </p>
                 </div>
             </div>
@@ -125,7 +123,12 @@
                 </div>
 
                 <div class="row">
-                    <h2>Sub-task 1.1: Literary Epochs Classification</h2>
+                    <h2>Task 1: Literary Text Dating</h2>
+                    <p>
+                        This task focuses on automatically dating literary texts through two complementary sub-tasks:
+                    </p>
+
+                    <h3>Sub-task 1.1: Literary Epochs Classification</h3>
                     <p>
                         Classification of texts into five literary epochs:
                     <ul>
@@ -137,55 +140,46 @@
                     </ul>
                     </p>
 
-                    <h2>Sub-task 1.2: Period Classification</h2>
+                    <h3>Sub-task 1.2: Period Classification</h3>
                     <p>
                         Texts are classified into three epoch periods: early (first quarter of the epoch),
                         middle (middle half), and late (final quarter). These periods differ in length between
                         epochs. The Contemporary epoch is divided into only two periods.
                     </p>
                 </div>
-            </div>
-        </section>
-
-        <section id="section-evaluation" class="section-wrapper section-evaluation">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-title">
-                            <h1>Evaluation</h1>
-                        </div>
-                    </div>
-                </div>
 
                 <div class="row">
-                    <h2>Evaluation Metrics</h2>
-                    <p>The evaluation of TASK1 is based on balanced accuracy which is defined as follows:</p>
-
-                    <div class="text-center">
-                        <p>
-                            Balanced Accuracy = (1/N) ∑(TPᵢ/(TPᵢ + FNᵢ))
-                            <br>
-                            where N = Number of classes
-                            <br>
-                            TPᵢ = True Positives for class i
-                            <br>
-                            FNᵢ = False Negatives for class i
-                        </p>
-                    </div>
-
-                    <h3>Final Ranking</h3>
+                    <h2>Task 2: ChronoText Classification</h2>
                     <p>
-                        The final rank is calculated as a Harmonic Mean of balanced accuracies across Sub-task 1.1
-                        and Sub-task 1.2:
+                        This task focuses on temporal classification at different granularity levels through two complementary sub-tasks:
                     </p>
 
-                    <div class="text-center">
+                    <h3>Sub-task 2.1: Century Classification</h3>
+                    <p>
+                        Classification of texts into their century of origin:
+                    <ul>
+                        <li>17th Century</li>
+                        <li>18th Century</li>
+                        <li>19th Century</li>
+                        <li>20th Century</li>
+                        <li>21st Century</li>
+                    </ul>
+                    </p>
+
+                    <h3>Sub-task 2.2: Decade Classification</h3>
+                    <p>
+                        For each text, participants must identify the specific decade within the century when the text was written.
+                    </p>
+
+                    <div class="task-note" style="margin-top: 30px; padding: 20px; background-color: #f9f9f9; border-radius: 5px;">
                         <p>
-                            Final Rank = (2 · BA₁.₁ · BA₁.₂)/(BA₁.₁ + BA₁.₂)
-                            <br>
-                            where BA₁.₁ = Balanced Accuracy of Sub-task 1.1
-                            <br>
-                            BA₁.₂ = Balanced Accuracy of Sub-task 1.2
+                            We believe this shared task will help advance the field of information retrieval and natural 
+                            language processing and contribute to a deeper understanding of literary history.
+                        </p>
+                        <p>
+                            This competition is open to anyone passionate about information retrieval, machine learning, 
+                            and natural language processing. Whether you are a seasoned expert or a newcomer to the field, 
+                            we welcome you to participate and extend the boundaries of automated text analysis!
                         </p>
                     </div>
                 </div>
@@ -275,25 +269,32 @@
                                 <div class="section-title">
                                     <h3>Organizing Committee</h3>
                                     <ul style="padding-left: 20px;">
-                                        <li style="padding: 5px 0;"><strong>Marina Litvak</strong> <span style="color: grey">(Shamoon College of
+                                        <li style="padding: 5px 0;"><strong>Marina Litvak</strong> <span
+                                                style="color: grey">(Shamoon College of
                                                 Engineering, Israel)</span>
                                         </li>
-                                        <li style="padding: 5px 0;"><strong>Irina Rabaev</strong> <span style="color: grey">(Shamoon College of
+                                        <li style="padding: 5px 0;"><strong>Irina Rabaev</strong> <span
+                                                style="color: grey">(Shamoon College of
                                                 Engineering, Israel)</span>
                                         </li>
-                                        <li style="padding: 5px 0;"><strong>Ricardo Campos</strong> <span style="color: grey">(University of
+                                        <li style="padding: 5px 0;"><strong>Ricardo Campos</strong> <span
+                                                style="color: grey">(University of
                                                 Beira Interior and INESC TEC, Portugal)</span>
                                         </li>
-                                        <li style="padding: 5px 0;"><strong>Alípio Jorge</strong> <span style="color: grey">(University of Porto
+                                        <li style="padding: 5px 0;"><strong>Alípio Jorge</strong> <span
+                                                style="color: grey">(University of Porto
                                                 and INESC TEC, Portugal)</span>
                                         </li>
-                                        <li style="padding: 5px 0;"><strong>Adam Jatowt</strong> <span style="color: grey">(University of
+                                        <li style="padding: 5px 0;"><strong>Adam Jatowt</strong> <span
+                                                style="color: grey">(University of
                                                 Innsbruck, Austria)</span>
                                         </li>
-                                        <li style="padding: 5px 0;"><strong>Roza Bass</strong> <span style="color: grey">(Shamoon College of
+                                        <li style="padding: 5px 0;"><strong>Roza Bass</strong> <span
+                                                style="color: grey">(Shamoon College of
                                                 Engineering, Israel)</span>
                                         </li>
-                                        <li style="padding: 5px 0;"><strong>Hugo Sousa</strong> <span style="color: grey">(University of Porto
+                                        <li style="padding: 5px 0;"><strong>Hugo Sousa</strong> <span
+                                                style="color: grey">(University of Porto
                                                 and INESC TEC, Portugal)</span>
                                         </li>
                                     </ul>

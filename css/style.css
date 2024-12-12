@@ -37,7 +37,7 @@ strong {
 
 # Body  (text): #888
 # Heading Color #0E1555
-# Theme Color (link color) #FD367E
+# Theme Color (link color) #1fbeff
 # Mid grey (sub header) #666666
 # -------------------------------------------------------------------*/
 
@@ -104,7 +104,7 @@ h6 {
  * LINK STYLE
  *------------------------------------------*/
 a {
-  color: #fd367e;
+  color: #1fbeff;
   text-decoration: none;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -160,16 +160,16 @@ ul {
 
 /*btn-primary*/
 .btn-primary {
-  background-color: #fd367e;
-  border-color: #fd367e;
+  background-color: #1fbeff;
+  border-color: #1fbeff;
 }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active:focus {
   background: transparent;
-  color: #fd367e;
-  border-color: #fd367e;
+  color: #1fbeff;
+  border-color: #1fbeff;
 }
 
 /*btn-default*/
@@ -183,8 +183,8 @@ ul {
 .btn-default:focus,
 .btn-default:active:focus {
   background-color: transparent;
-  color: #fd367e;
-  border-color: #fd367e;
+  color: #1fbeff;
+  border-color: #1fbeff;
 }
 
 button:focus,
@@ -295,7 +295,7 @@ button:focus,
 
 .main-menu .nav li a:hover,
 .main-menu .nav li.active a {
-  color: #fd367e;
+  color: #1fbeff;
   background: transparent;
 }
 
@@ -385,7 +385,7 @@ button:focus,
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.65); /* Adjust the color and opacity */
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust the color and opacity */
   z-index: 1; /* Ensure the overlay is above the background image */
 }
 
@@ -719,7 +719,7 @@ button:focus,
 .form-control:focus,
 .form-control:active {
   box-shadow: none;
-  border-color: #fd367e;
+  border-color: #1fbeff;
 }
 
 @media (max-width: 600px) {
@@ -930,4 +930,25 @@ button:focus,
     display: flex;
     justify-content: center; /* Centers the image horizontally within the column */
     align-items: center; /* Centers the image vertically within the column */
+}
+
+/* Custom Kaggle Button Style */
+.kaggle-btn {
+  color: #ffffff;
+  background-color: #1fbeff; /* Light Sea Green */
+  border-color: #1fbeff;
+  font-size: 16px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-left: 25px;
+  padding: 10px 20px 10px 20px;
+}
+
+.kaggle-btn:hover,
+.kaggle-btn:focus {
+  background-color: #0b96cd; /* Sea Green */
+  color: #ffffff;
+  border-color: #0b96cd;
 }
